@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <div id="header"><!--contents of this div comes from javascript file-->
+  </div>
+  <button onclick="englishTranslate()" id="engButton">english</button>
+  <button onclick="hebrewTranslate()" id="hebButton" class="right">עברית</button>
+  <button onclick="yiddishTranslate()" id="yidButton" class="right">אידיש</button><!--contents of this div comes from javascript file, I just didn't bother erasing it here, also it's easier to read here. all changes must be made there.-->
+  <div id="main-section">
+    <div id="instructions">
+      <h1>ברוך הבא</h1>
+  <div class="boxes-container">
+      <label for="bY" class="labels"><input type="checkbox" id="bY" class="inputs">בני יששכר</label>
+      <label for="yB" class="labels"><input type="checkbox" id="yB" class="inputs">יודעי בינה</label>
+      <label for="shSh" class="labels"><input type="checkbox" id="shSh" class="inputs">שם שלמה</label>
+      <label for="dT" class="labels"><input type="checkbox" id="dT" class="inputs">דרכי תשובה</label>
+      <label for="mE" class="labels"><input type="checkbox" id="mE" class="inputs">מנחת אלעזר</label>
+      <label for="kKASh" class="labels"><input type="checkbox" id="kKASh" class="inputs">כ"ק אדמו"ר שליט"א</label>
+      <label for="sh" class="labels"><input type="checkbox" id="sh" class="inputs">שונים</label>
+    </div>
+    </div>
+    <div class="boxes" id="subjects">
+    <div class="boxes-container">
+      <label for="ch" class="labels"><input type="checkbox" id="ch" class="inputs">חומש</label>
+      <label for="mu" class="labels"><input type="checkbox" id="mu" class="inputs">מ"ומ</label>
+      <label for="shS" class="labels"><input type="checkbox" id="shS" class="inputs">ש"ס</label>
+      <label for="na" class="labels"><input type="checkbox" id="na" class="inputs">נ"ך</label>
+      <label for="tar" class="labels"><input type="checkbox" id="tar" class="inputs">תרי"ג מצוות</label>
+      <label for="hal" class="labels"><input type="checkbox" id="hal" class="inputs">הלכה</label>
+      <label for="shUt" class="labels"><input type="checkbox" id="shUt" class="inputs">שא"ות</label>
+    <label for="markI" class="labels"><input type="checkbox" id="markI" class="inputs">???</label>
+    <label for="markII" class="labels"><input type="checkbox" id="markII" class="inputs">???</label>
+    <label for="markIII" class="labels"><input type="checkbox" id="markIII" class="inputs">???</label>
+  </div>
+  </div>
+  <div class="boxes" id="subjects">
+    <div class="boxes-container">
+  <button id="searchBtn" type="button" onclick="init()">search</button>
+  </div>
+  </div>
+</div><script src="catalog.js"></script>
+<script src="librarian.js"></script>
+<script src="cpf2.js"></script>
+
+</body>
+  <style>
+      * {
+  margin: 0;
+}
+
+#header {
+  margin-top: 10px;
+  text-align: right;
+  background-image: linear-gradient(to left, blue, white);
+  padding-right: 15px;
+  height: 100px;
+  line-height: 100px;
+}
+
+#main-section {
+/*   background-color: red; */
+  text-align: center;
+  overflow: hidden;
+}
+
+/* #choices {
+  margin-right: 20px;
+  
+} */
+
+.inputs {
+  vertical-align: middle;
+  position: relative;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.right {
+  float: right;
+  top:4px;
+}
+
+.labels {
+  padding-left:20px;
+  float: right;
+}
+
+.boxes {
+  max-width:800px;
+  margin-top: 50px; 
+  float: right;
+  position: relative;
+  left: -50%;
+}
+
+.boxes-container {
+  float: right;
+  position: relative;
+  left: 50%;
+}
+
+#subjects {
+  clear: both;
+}
+
+#searchBtn {
+  margin-top: 50px;
+}
+    </style>
+    
+</html>
